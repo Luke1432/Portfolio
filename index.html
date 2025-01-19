@@ -1,71 +1,201 @@
 <!DOCTYPE html>
-    <head>
-        <title>Portfolio - Lukas Fenkam</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Fenkam - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
     <header>
-        <div class="logo">
-          <a href="/">Lukas Fenkam</a>
-        </div>
+      <h1>Lukas Fenkam</h1>
+      <p>Computer Science Student | Programmer | Web Developer</p>
         <nav>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <a class="resume" href="./LukasFenkamResume.pdf">Download Resume</a>
     </header>
-      
-    <body>
-        <section id="#about-me">
-            <h1>About me</h1>
-            <p>I am a passionate computer science student at Ontario Tech University, with a focus on software development and programming. Over the years, I have developed a strong skill set in Java, Python, C++, HTML, CSS, and Linux, backed by hands-on experience through internships, summer camps, and personal projects. My time at Red Hat as an intern on the Quarkus team has honed my problem-solving and collaboration skills, allowing me to contribute to simplifying tools in the Quarkus ecosystem. In addition to my technical skills, I have a keen interest in community engagement, which is reflected in my work developing mobile applications for educational programs and my involvement in hackathons for youth. I am fluent in English, French, and German, and I maintain an active GitHub account where I share my projects and contributions. Feel free to explore my work and projects on GitHub!</p>
-        </section>
-        <section id="projects">
-            <div class="slideshow-container">
 
-                <div class="">
-                  <div class=""></div>
-                </div>
-              
-                <div class="">
-                  
-                </div>
-              
-                <div class="">
-                  
-                </div>
-              
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
-        </section>
-        <section id="experience">
-            
-        </section>
-        <section id="skills">
-            
-        </section>
-        <section id="education">
-            
-        </section>
-        <section id="contact">
-            
-        </section>
+    <!-- Home Section -->
+    <section id="home">
+    </section>
 
-    </body>
-    <footer>
-        <p>© 2025 Lukas Fenkam. All rights reserved.</p>
-    </footer>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science student at Ontario Tech University with a passion for software development and problem-solving. With experience in a variety of programming languages, including Java, JavaScript, HTML, CSS, and Python, I thrive in both front-end and back-end development. Through my work with frameworks like Quarkus and my contributions to open-source projects, I've honed my skills in building efficient, scalable applications. I have also developed interactive projects, such as a Battleship game using JavaScript, which showcases my ability to integrate logic with user-friendly interfaces. My background extends beyond programming — having worked at summer camps and with educational organizations, I bring strong communication, leadership, and teamwork skills to every project. Fluent in English, French, and German, I am always eager to take on new challenges and collaborate with others to create impactful, user-focused solutions.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <!-- Technology/Programming Skills -->
+      <h2>Technology & Programming Skills</h2>
+      <div class="flashcard-container">
+          <div class="flashcard-row">
+              <!-- Java -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Java</h2>
+                  </div>
+                  <div class="back">
+                      <p>I have used Java in various contexts, most notably for backend development with the Quarkus framework, where I contributed to the Quarkus-Quarkiverse components. Additionally, I leveraged Java in building a simple application that simplifies build reports, demonstrating my understanding of object-oriented programming, APIs, and application architecture.</p>
+                  </div>
+              </div>
+  
+              <!-- Python -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Python</h2>
+                  </div>
+                  <div class="back">
+                      <p>Though I have a limited number of Python projects, I have utilized Python for scripting and automation tasks, showcasing my ability to write clean and efficient code for problem-solving. My Python experience, though minimal, continues to grow as I explore its applications in different contexts.</p>
+                  </div>
+              </div>
+  
+              <!-- C++ -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>C++</h2>
+                  </div>
+                  <div class="back">
+                      <p>I have worked with C++ primarily in academic settings, focusing on data structures, algorithms, and programming fundamentals. This has allowed me to build a solid foundation in low-level programming and memory management, which has enhanced my understanding of how software operates at a deeper level.</p>
+                  </div>
+              </div>
+  
+              <!-- HTML & CSS -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>HTML & CSS</h2>
+                  </div>
+                  <div class="back">
+                      <p>I've used HTML and CSS to design and build my personal website, which serves as both a portfolio and a showcase of my front-end development skills. This project involved creating responsive layouts, styling web pages, and ensuring an intuitive user experience through clean, maintainable code.</p>
+                  </div>
+              </div>
+  
+              <!-- Git & GitHub -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Git & GitHub</h2>
+                  </div>
+                  <div class="back">
+                      <p>Git and GitHub have been integral to my development workflow. I have utilized Git for version control in all my projects, from solo coding endeavors to contributions in open-source projects like Quarkus. GitHub has enabled me to collaborate with others, track changes efficiently, and host my projects in a public repository.</p>
+                  </div>
+              </div>
+  
+              <!-- Quarkus -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Quarkus</h2>
+                  </div>
+                  <div class="back">
+                      <p>My experience with Quarkus is centered around backend development, where I worked on building Quarkiverse components and simplifying the build report process in a Java-based environment. This work exposed me to modern microservice architectures and cloud-native development practices.</p>
+                  </div>
+              </div>
+  
+              <!-- Linux -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Linux</h2>
+                  </div>
+                  <div class="back">
+                      <p>I have extensive experience using Linux, particularly for development and system administration tasks. My familiarity with the terminal, file system navigation, shell scripting, and working with tools like Git and Docker on Linux has been crucial in many of my projects. Linux also plays a key role in my daily development workflow, where I often use it to manage environments and handle deployments.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- General Skills -->
+      <h2>General Skills</h2>
+      <div class="flashcard-container">
+          <div class="flashcard-row">
+              <!-- Leadership -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Leadership</h2>
+                  </div>
+                  <div class="back">
+                      <p>My leadership experience has been developed through several summer camp positions and educational roles. I have overseen teams, coordinated activities, and handled conflict resolution, all while maintaining a positive and engaging environment for children and other staff members.</p>
+                  </div>
+              </div>
+  
+              <!-- Teamwork -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Teamwork</h2>
+                  </div>
+                  <div class="back">
+                      <p>Through multiple group projects at university and during my summer camp roles, I have honed my ability to collaborate effectively with others. I focus on clear communication, listening to team members, and sharing responsibilities to ensure successful outcomes and learning opportunities for everyone involved.</p>
+                  </div>
+              </div>
+  
+              <!-- Problem Solving -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Problem Solving</h2>
+                  </div>
+                  <div class="back">
+                      <p>My problem-solving skills have been developed through coursework, personal projects, and professional experiences. Whether debugging code, optimizing algorithms, or resolving conflicts in team settings, I approach challenges with a logical mindset and a focus on finding practical, efficient solutions.</p>
+                  </div>
+              </div>
+  
+              <!-- Communication -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Communication</h2>
+                  </div>
+                  <div class="back">
+                      <p>Having worked in diverse roles including summer camps and as an assistant teacher, I have refined my communication skills. I ensure that complex ideas are conveyed clearly and concisely, whether in written form or during face-to-face interactions, ensuring effective collaboration and understanding.</p>
+                  </div>
+              </div>
+  
+              <!-- Conflict Resolution -->
+              <div class="flashcard">
+                  <div class="front">
+                      <h2>Conflict Resolution</h2>
+                  </div>
+                  <div class="back">
+                      <p>My experience in conflict resolution was developed while working in various team settings, including summer camps and educational environments. I handle conflicts with empathy, listening to all parties involved and finding solutions that address concerns while maintaining a positive environment.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="project-thumbnail.jpg" alt="Project Thumbnail">
+            <h3>Project Title</h3>
+            <p>Short description of the project.</p>
+            <button class="modal-trigger">More Info</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:lukas@fenkam.name">lukas@fenkam.name</a></p>
+        <p>Phone: (647)-221-2332</p>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Project Details</h2>
+            <p>Detailed information about the project goes here...</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
