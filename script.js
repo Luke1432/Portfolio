@@ -37,3 +37,4 @@ flashcards.forEach(flashcard => {
         flashcard.classList.toggle('flipped');
     });
 });
+

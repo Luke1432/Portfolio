@@ -1,11 +1,9 @@
-/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -13,7 +11,6 @@ body {
     margin: 0;
 }
 
-/* Header and Navigation */
 header {
     background-color: #333;
     color: #fff;
@@ -54,19 +51,6 @@ ul {
 ul li {
     font-size: 1.1rem;
     margin-bottom: 10px;
-}
-
-.project-card {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.project-card img {
-    max-width: 100%;
-    height: auto;
 }
 
 button {
@@ -247,3 +231,185 @@ h2 {
 .flashcard:hover .back {
     transform: rotateY(0);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    width:100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 10s slide infinite;
+}
+
+.slide{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .fade {
+    animation: fadeEffect 2s infinite;
+  }
+  
+  @keyframes fadeEffect {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Flashcards */
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.flashcard .front,
+.flashcard .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 10px;
+}
+
+.flashcard .front {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flashcard .back {
+    background-color: #e0e0e0;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flashcard:hover .front {
+    transform: rotateY(180deg);
+}
+
+.flashcard:hover .back {
+    transform: rotateY(0deg);
+}
+
+/* Slider */
+.slider {
+    overflow: hidden;
+    position: relative;
+}
+
+
