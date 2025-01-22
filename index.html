@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script>
+    window.onload = () => {
+        localStorage.setItem('homePageOpened', 'true');
+    };
+</script>
 </head>
 <body>
     <header>
@@ -82,7 +87,7 @@
                     <h3>Battleship Game</h3>
                     <p>A web-based Battleship game built using JavaScript, HTML, and CSS.</p>
                     <button class="project-button"><a id="battleship-link" href="https://luke1432.github.io/BattleshipWebpage/" target="_blank">Play Game</a></button>
-                    <button class="project-button"><a href="https://github.com/Luke1432/battleship-game" target="_blank">View on GitHub</a></button>
+                    <button class="project-button"><a href="https://github.com/Luke1432/BattleshipWebpage" target="_blank">View on GitHub</a></button>
                 </div>
                 <div class="slide" id="slide2">
                     <h3>Red Hat GitHub Application (Internship Project)</h3>
