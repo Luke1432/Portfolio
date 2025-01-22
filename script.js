@@ -60,7 +60,7 @@ function showSection(sectionId) {
     }
 }
 
-const pdfUrl = 'path/to/your.pdf';
+const pdfUrl = 'LukasFenkamResume.pdf';
 const canvas = document.getElementById('pdf-render');
 const ctx = canvas.getContext('2d');
 
