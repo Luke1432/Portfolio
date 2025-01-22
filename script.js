@@ -83,7 +83,7 @@ home-page.addEventListener("click", () => {
     if (localStorage.getItem('visitedPortfolio') === 'true') {
         const backButton = document.createElement('button');
         backButton.innerText = 'Back to Portfolio';
-        backButton.onclick = () => window.location.href = 'https://luke1432.github.io/';
+        backButton.onclick = () => window.location.href = 'https://luke1432.github.io/Portfolio/';
         document.body.appendChild(backButton);
     }
 });
