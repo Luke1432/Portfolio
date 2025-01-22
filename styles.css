@@ -25,6 +25,7 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 5px 10px;
 }
 
 .section {
@@ -152,7 +153,7 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     display: flex;
-    padding: 16px;
+    padding: 0px;
     color: white;
     box-sizing: border-box;
 }
@@ -160,7 +161,7 @@ nav ul li a:hover {
 .github-view a, .battleship-game-button a {
     color: inherit; /* Inherit color from parent */
     text-decoration: none;
-    padding: 16px; /* Even padding on all sides */
+    padding: 0px; /* Even padding on all sides */
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
@@ -174,9 +175,85 @@ nav ul li a:hover {
 }
 
 .pdf-container {
-    width: 100%;
-    height: 70vh; /* Full viewport height */
+    align-items: center;
+}
+
+.project-button {
+    cursor: pointer;
+    position: relative;
+    width: auto;
+    padding: 16px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    border-radius: 3px;
+    background-color: transparent;
+    border: none;
+}
+
+.project-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.project-button a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+    padding: 0px; /* Even padding on all sides */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-button a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+#pdfViewer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
+    height: 100vh; /* Ensure the container takes up the full height of the viewport */
+}
+
+#pdfCanvas {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    max-width: 100%; /* Ensure the canvas is responsive */
+    max-height: 100%; /* Ensure the canvas doesn't overflow */
+}
+
+#pdfControls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pdfControls button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#pdfControls button:hover {
+    background-color: #0056b3;
+}
+
+#pdfControls label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#pdfControls input[type="range"] {
+    width: 200px;
 }

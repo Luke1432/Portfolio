@@ -6,6 +6,7 @@
     <title>Portfolio - Lukas Fenkam</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 </head>
 <body>
     <header>
@@ -80,28 +81,32 @@
                 <div class="slide displaySlide" id="slide1">
                     <h3>Battleship Game</h3>
                     <p>A web-based Battleship game built using JavaScript, HTML, and CSS.</p>
-                    <button class="github-view"><a id="battleship-link" href="BattleshipWebpage/battleship.html" target="_blank">Play Game</a></button>
-                    <button class="github-view"><a href="https://github.com/Luke1432/battleship-game" target="_blank">View on GitHub</a></button>
+                    <button class="project-button"><a id="battleship-link" href="BattleshipWebpage/battleship.html" target="_blank">Play Game</a></button>
+                    <button class="project-button"><a href="https://github.com/Luke1432/battleship-game" target="_blank">View on GitHub</a></button>
                 </div>
                 <div class="slide" id="slide2">
                     <h3>Red Hat GitHub Application (Internship Project)</h3>
                     <p>During my internship at Red Hat, I developed a GitHub bot designed to automate and streamline issue and pull request management for the Quarkus ecosystem.</p>
-                    <button class="github-view"><a href="https://github.com/Luke1432/quarkus-github-bot" target="_blank">View on GitHub</a></button>
+                    <button class="project-button"><a href="https://github.com/Luke1432/quarkus-github-bot" target="_blank">View on GitHub</a></button>
                 </div>
                 <div class="slide" id="slide3">
                     <h3>Portfolio Website</h3>
                     <p>A fully responsive, user-friendly portfolio website, made using HTML, CSS and JavaScript.</p>
-                    <button class="github-view"><a href="https://github.com/Luke1432/portfolio-website" target="_blank">View on GitHub</a></button>
+                    <button class="project-button"><a href="https://github.com/Luke1432/portfolio-website" target="_blank">View on GitHub</a></button>
                 </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
             </div>
-            <button class="prev" onclick="prevSlide()">&#10094;</button>
-            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
     </section>
     <section class="section" id="resume">
         <h2>Resume</h2>
         <div class="pdf-container">
-            <embed src="LukasFenkamResume.pdf#toolbar=0&navpanes=0&scrollbar=0" width="1100" height="450" type="application/pdf" class="pdf-viewer"/>
+            
+            <embed src="LukasFenkamResume.pdf" width="100%" height="1400px" zoom="115%" type="application/pdf">
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+            <script src="script.js"></script>
         </div>
     </section>
     <section class="section" id="certifications">

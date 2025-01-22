@@ -60,4 +60,23 @@ function showSection(sectionId) {
     }
 }
 
+const pdfUrl = 'path/to/your.pdf';
+const canvas = document.getElementById('pdf-render');
+const ctx = canvas.getContext('2d');
+
+const loadingTask = pdfjsLib.getDocument(pdfUrl);
+loadingTask.promise.then(pdf => {
+    pdf.getPage(1).then(page => {
+        const viewport = page.getViewport({ scale: 1.5 });
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+
+        const renderContext = {
+            canvasContext: ctx,
+            viewport: viewport,
+        };
+        page.render(renderContext);
+    });
+});
+
 window.onload = () => showSection('about');
